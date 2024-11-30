@@ -32,7 +32,6 @@ public class Functions
                 }
                 j++;
             }
-            
             if (!flag)
             {
                 string newS = "";
@@ -47,12 +46,10 @@ public class Functions
                         newS += cur;
                     }
                 }
-                
                 s = newS;
                 i += dif;
             }
         }
-
         return s;
     }
     public static List<int> Contains(string s, string old)
@@ -70,19 +67,16 @@ public class Functions
                 }
                 j++;
             }
-            
             if (!flag)
             {
                 found.Add(i);
             }
         }
-
         return found;
     }
     public static string[] Group(string s, int am)
     {
         string[] group = new string[s.Length-am+1];
-
         for (int i = 0; i < s.Length-am+1; i++)
         {
             group[i] = "";
@@ -122,21 +116,17 @@ public class Program
         string line = "";
         int lCount = 0;
         const char split = ' ';
-
         while ((line = Functions.GetLine(lCount, total)) != null)
         {   
             lCount++;
             string[] lineA = line.Split(split);
-
             for (int i = 0; i < lineA.Length; i++)
             {
                 switch(lineA[i])
-                {
-                    
+                {  
                 }
             }
         }
-
         Console.WriteLine(total);
         Console.ReadLine();
     }
