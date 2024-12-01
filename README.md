@@ -106,6 +106,19 @@ public class Functions
             return line;
         }
     }
+    public static int InputLength()
+    {
+        int count = 0;
+        string line;
+        using (StreamReader sr = new StreamReader("text.txt"))
+        {
+            while ((line = sr.ReadLine()) != null)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
 }
 
 public class Program
