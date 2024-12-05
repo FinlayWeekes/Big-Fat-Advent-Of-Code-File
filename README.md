@@ -6,6 +6,13 @@ using Microsoft.VisualBasic;
 
 public class Functions
 {
+    public static void CreateText()
+    {
+        using (StreamWriter sw = new StreamWriter("text.txt"))
+        {
+            sw.WriteLine();
+        }
+    }
     public static string Reverse(string s)
     {
         string temp = "";
