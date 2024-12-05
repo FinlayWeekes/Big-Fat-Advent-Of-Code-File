@@ -119,6 +119,18 @@ public class Functions
         }
         return count;
     }
+    public static int LineCount()
+    {
+        int i = 0;
+        using (StreamReader sr = new StreamReader("text.txt"))
+        {
+            while (sr.ReadLine() != null)
+            {
+                i++;
+            }
+            return i;
+        }
+    }
 }
 
 public class Program
